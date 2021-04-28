@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    width: 100%;
+} */
+
+.effects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+}
+
+.effect-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 1rem;
+    width: 46%;
+    max-height: 350px;
+    /* width: 100%; */
+}
+
+.effect-container .funcs-box {
+    border: 1px solid #000;
+}
+
+.effect-container .funcs-box .func-btn-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+}
+
+.effect-container .funcs-box .func-btn-sec-1,
+.effect-container .funcs-box .func-btn-sec-2 {
+    border-bottom: 1px solid #000;
+}
+
+.effect-container .img-box {
+    border: 1px solid #000;
+    border-left: none;
+}
+
+.effect-container .img-box img {
+    width: 100%;
+}
+
+.effect-container .view-code-section {
+    grid-column: span 2;
+    border: 1px solid #000;
+    border-top: none;
+    /* min-height: 32px; */
+}
+
+.effect-container .img-box,
+.effect-container .view-code-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effect-container .view-code-section .view-code-btn {
+    margin: 1em 0;
+}
+
+/* @media only screen and (max-width: 1258px) {
+    .effect-container {
+        min-width: 46%;
+    }
+} */
+
+@media only screen and (max-width: 1068px) {
+    .effect-container {
+        width: 80%;
+        max-width: 577px;
+    }
+}
