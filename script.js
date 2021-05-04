@@ -38,4 +38,42 @@ $(document).ready(() => {
     $('.slide-toggle-btn').on('click', () => {
         $('.image-three').slideToggle();
     });
+
+
+
+    // Click event for page mask and code modals
+
+    // Page mask
+    $('#page-mask').on('click', () => {
+        $('#page-mask').fadeOut('fast');
+        $('.code-modal').hide();
+        $('body').css('overflow', 'visible');
+    });
+
+    $('.code-modal').on('click', () => {
+        $('#page-mask').fadeOut('fast');
+        $('.code-modal').hide();
+        $('body').css('overflow', 'visible');
+    });
+
+    // Show/hide/toggle modal
+    $('.view-code-btn-1').on('click', () => {
+        $('#page-mask').fadeIn('fast');
+        $('body').css('overflow', 'visible');
+        $('.toggle-modal').css('display', 'flex');
+    });
+
+    // Fade modal
+    $('.view-code-btn-2').on('click', () => {
+        $('#page-mask').fadeIn('fast');
+        $('body').css('overflow', 'visible');
+        $('.fade-modal').css('display', 'flex');
+    });
+
+    // Slide modal
+    $('.view-code-btn-3').on('click', () => {
+        $('#page-mask').fadeIn('fast');
+        $('body').css('overflow', 'visible');
+        $('.slide-modal').css('display', 'flex');
+    });
 });

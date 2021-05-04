@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic jQuery Effects</title>
+    <script src="https://kit.fontawesome.com/26c2fe637f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -31,7 +32,7 @@
                 <img class="image image-one" src="./img/img1.jpg" alt="Image of Yosemite Valley">
             </div>
             <div class="view-code-section">
-                <button class="view-code-btn">Show jQuery Code</button>
+                <button class="view-code-btn view-code-btn-1">Show jQuery Code</button>
             </div>
         </div>
     
@@ -51,7 +52,7 @@
                 <img class="image image-two" src="./img/img2.jpg" alt="Image of the Camp Curry sign at Yosemite">
             </div>
             <div class="view-code-section">
-                <button class="view-code-btn">Show jQuery Code</button>
+                <button class="view-code-btn view-code-btn-2">Show jQuery Code</button>
             </div>
         </div>
     
@@ -71,18 +72,86 @@
                 <img class="image image-three" src="./img/img3.jpg" alt="Image of Vernal Falls at Yosemite">
             </div>
             <div class="view-code-section">
-                <button class="view-code-btn">Show jQuery Code</button>
+                <button class="view-code-btn view-code-btn-3">Show jQuery Code</button>
             </div>
         </div>
     </section>
-    <section class="test">
-        <div class="test1"></div>
-        <div class="test2"></div>
-        <div class="test3"></div>
-        <div class="test3"></div>
-        <div class="test3"></div>
-        <div class="test3"></div>
-        <div class="test3"></div>
-    </section>
+    <div id="page-mask"></div>
+
+    <!-- Code modals -->
+    <div class="code-modal toggle-modal">
+        <div class="close-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div>
+            <div class="code-snippet">
+                <p>$('.show-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-one').show();</p>
+                <p>});</p>
+            </div>
+            <br>
+            <div class="code-snippet">
+                <p>$('.hide-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-one').hide();</p>
+                <p>});</p>
+            </div>
+            <br>
+            <div class="code-snippet">
+                <p>$('.toggle-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-one').toggle();</p>
+                <p>});</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="code-modal fade-modal">
+        <div class="close-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div>
+            <div class="code-snippet">
+                <p>$('.fade-in-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-two').fadeIn()</p>
+                <p>});</p>
+            </div>
+            <br>
+            <div class="code-snippet">
+                <p>$('.fade-out-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-two').fadeOut()</p>
+                <p>});</p>
+            </div>
+            <br>
+            <div class="code-snippet">
+                <p>$('.fade-toggle-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-two').fadeToggle()</p>
+                <p>});</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="code-modal slide-modal">
+        <div class="close-icon">
+            <i class="fas fa-times"></i>
+        </div>
+        <div>
+            <div class="code-snippet">
+                <p>$('.slide-down-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-one').slideDown();</p>
+                <p>});</p>
+            </div>
+            <br>
+            <div class="code-snippet">
+                <p>$('.slide-up-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-one').slideUp();</p>
+                <p>});</p>
+            </div>
+            <br>
+            <div class="code-snippet">
+                <p>$('.slide-toggle-btn').on('click', () => {</p>
+                <p>&nbsp&nbsp&nbsp&nbsp$('.image-one').slideToggle();</p>
+                <p>});</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
